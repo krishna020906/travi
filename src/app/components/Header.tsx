@@ -1,11 +1,14 @@
 import React from 'react'
+//import logo from './app/images/logo.png'
 
 function Header() {
   return (
 <div className="parent-container">
   <div className="main-header pl-20 pr-20  border-solid border-b-[1px] pb-6">
     <div className="flex justify-between h-20 items-center primary-header">
-      <div>Image</div>
+      <div className='h-[120px] w-[120px] block'>
+        <img src= "images/logo.png" alt="" />
+      </div>
       <div className="flex gap-6">
         <div className="font-medium ">Stays</div>
         <div>Experiences</div>
