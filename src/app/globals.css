@@ -115,6 +115,7 @@
 .filter-header {
   position: sticky;
   top: 171px;
+  background-color: white;
 }
 
 .show-item .filter-header {

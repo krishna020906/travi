@@ -4,9 +4,12 @@ import React, { useEffect } from 'react'
 import Login from './Login'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { Card, CardContent } from '@/components/ui/card'
+import Image from "next/image";
 
 
-function Header() {
+
+const Header = ({categories}: any) => {
+ 
   useEffect(() => {
     const element = document.querySelector('.parent-container')
     function handlescroll() {
@@ -53,15 +56,15 @@ function Header() {
             </div>
             <div>
               <div className="font-medium text-xs">Check In</div>
-              <div>Add dates</div>
+              <div className='text-muted-foreground'>Add dates</div>
             </div>
             <div>
               <div className="font-medium text-xs">Check out</div>
-              <div>Add dates</div>
+              <div className='text-muted-foreground'>Add dates</div>
             </div>
             <div>
               <div className="font-medium text-xs">Who</div>
-              <div>Add guests</div>
+              <div className='text-muted-foreground'>Add guests</div>
             </div>
             <div className="bg-[#2097F3] rounded-full h-12 w-12 mr-3 flex justify-center items-center text-white">
               <Search />
@@ -83,12 +86,13 @@ function Header() {
       <div className=" filter-header h-20 pl-20 pr-20">
       <Carousel className="w-full ">
         <CarouselContent className="-ml-1">
-          {Array.from({ length: 5 }).map((_, index) => (
+          {Array.from(categories).map((item: any, index) => (
             <CarouselItem key={index} className="pl-1 basis-auto">
               <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-2xl font-semibold">{index + 1}</span>
+                <Card className='shadow-none border-0 bg-transparent'>
+                  <CardContent className="flex flex-col items-center justify-center p-4 text-muted-foreground hover:underline hover:cursor-pointer ">
+                    <Image width={30} height={30} src={item.imageUrl} alt="category-image"/>
+                    <span className="text-sm font-normal">{item.title}</span>
                   </CardContent>
                 </Card>
               </div>
