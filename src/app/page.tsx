@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Header from "./components/Header"
-import { categoryData } from "./lib/Categories";
+import { categoryData } from "./lib/categories";
 
 export default function Home() {
   const {categoryBar: {categories}} = categoryData

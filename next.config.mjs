@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
           {
             protocol: 'https',
-            hostname: 'a0.muscache.com',
+            hostname: 'cdn-icons-png.flaticon.com',
             port: '',
           },
         ],
