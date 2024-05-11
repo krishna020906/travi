@@ -13,8 +13,8 @@ export const categoryData = {
                 "title" : "Amazing View"
             },
             {
-                "imageUrl": "https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg",
-                "title": "Luxurious"
+                "imageUrl": "https://a0.muscache.com/pictures/757deeaa-c78f-488f-992b-d3b1ecc06fc9.jpg",
+                "title": "Skiing"
             },
             {
                 "imageUrl": "https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg",
@@ -57,8 +57,8 @@ export const categoryData = {
                 "title": "Surfing"
             },
             {
-                "imageUrl": "https://a0.muscache.com/pictures/757deeaa-c78f-488f-992b-d3b1ecc06fc9.jpg",
-                "title": "Skiing"
+                "imageUrl": "https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg",
+                "title": "Luxurious"
             },
             {
                 "imageUrl": "https://a0.muscache.com/pictures/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg",
