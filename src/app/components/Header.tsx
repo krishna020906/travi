@@ -5,6 +5,7 @@ import Login from './Login'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { Card, CardContent } from '@/components/ui/card'
 import Image from "next/image";
+import Link from 'next/link'
 
 
 
@@ -90,10 +91,16 @@ const Header = ({categories}: any) => {
             <CarouselItem key={index} className="pl-1 basis-auto">
               <div className="p-1">
                 <Card className='shadow-none border-0 bg-transparent'>
-                  <CardContent className="flex flex-col items-center justify-center p-4 text-muted-foreground hover:underline hover:cursor-pointer ">
-                    <Image width={30} height={30} src={item.imageUrl} alt="category-image"/>
-                    <span className="text-sm font-normal">{item.title}</span>
-                  </CardContent>
+                  <Link href={{
+                    href:'/', query: {
+                      filter:item.title
+                    }
+                  }}>
+                    <CardContent className="flex flex-col items-center justify-center p-4 text-muted-foreground hover:underline hover:cursor-pointer ">
+                      <Image width={30} height={30} src={item.imageUrl} alt="category-image"/>
+                      <span className="text-sm font-normal">{item.title}</span>
+                    </CardContent>
+                  </Link>
                 </Card>
               </div>
             </CarouselItem>
